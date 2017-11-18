@@ -45,7 +45,7 @@
 \newglossaryentry{Administrator}
 {
 	name={Administrator},
-description={Ein Administrator ist der Verwalter des Systems,er unterstützt die Datenbankverwaltung und er hat im Vergleich zu Standardbenutzer erweiterte Rechte. Er spielt auch die Rolle der Moderator, damit er die Rechte zum Benutzer einräumen und entziehen kann } 
+description={Ein Administrator ist der Verwalter des Systems,er unterstützt die Datenbankverwaltung und er hat im Vergleich zu Standardbenutzer erweiterte Rechte. Er spielt auch die Rolle der Moderator, damit er die Rechte zum Benutzer einräumen und entziehen kann . Der Administrator ist ein Mitarbeiter von V-FOR-WaTer} 
 }
 \newglossaryentry{Ressourcenbesitzer}
 {
@@ -267,7 +267,15 @@ Im Folgenden werden die funktionale Anforderungen: sowohl Musskriterien als auch
 
 \subsubsection{Administratorfunktionen}
 \begin{enumerate}[label={\textbf{/F\protect\threedigits{\theenumi}0/}}, leftmargin=*, resume]
-\item \textit{bla}
+item\ \textbf{Konto:} Ein Administratorskonto ist ein erweitertes Benutzerkonto. Jegliche Funktionen eines Benutzers, besitzt somit auch ein Administrator.
+\item \textbf{Rechte gewähren:}\\  Der Administrator kann einem Benutzer Moderationsrechte einräumen und wieder entziehen.
+\item \textbf{Benutzer blockieren:}\\ Der Administrator kann einen Benutzer blockieren, damit dieser sich nicht anmelden kann.
+\item \textbf{Benutzer löschen:}\\ Der Administrator kann einen Benutzer löschen. Zusammen mit dem Account werden seine personenbezogenen Daten entfernt.
+\item \textbf{Ressourcen löschen:}\\ Der Administrator kann Ressourcen löschen, mit oder ohne Request.
+\item \textbf{Request ablehnen/genehmigen:}\\ Wenn der Administrator einen Request erhalten hat, kann er diesen ablehnen oder genehmigen.
+\item \textbf{Benutzer suchen:}\\ Es kann ein Benutzer anhand von Vorname, Nachname (oder nur ID) gesucht werden. Dieser wird dann angezeigt und es steht zur Verfügung.
+
+
 \end{enumerate}
 
 \section{Produktdaten}
@@ -343,6 +351,8 @@ Im Folgenden werden die funktionale Anforderungen: sowohl Musskriterien als auch
 \item Zur Erstellung eines Requests sind maximal X Schritte nötig.
 \item Eine Änderung von Rechten führt nicht zur Veränderung von Ressourcen.
 \item Eingabefelder, die Pflicht für den Benutzer sind, sollen mit einem Sternchen markiert werden.
+\item Die Erhebung, Speicherung und Veröffentlichung von personenbezogenen Daten muss in Übereinstimmung mit dem Bundesdatenschutzgesetz (BDSG) erfolgen
+\item Für die vertragliche Beziehung zwischen Portalbetreiber und Portalnutzer können Allgemeine Geschäftsbedingungen (AGB) verwendet werden. Bei einer Verwendung von AGB müssen diese wirksam bei Vertragsabschluss einbezogen werden und sollten jederzeit auch nachträglich einsehbar sein.
 \end{enumerate}
 
 
